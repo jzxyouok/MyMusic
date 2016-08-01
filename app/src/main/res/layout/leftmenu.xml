@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/relative_up"
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="@drawable/background_three"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="菜单"
+            android:textColor="#ffffff"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_exit"
+        android:layout_below="@+id/relative_up">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:baselineAligned="false"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txt_show_search_song"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_search_dark"
+                android:text="扫描歌曲" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_play_mode"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_list_reapeat"
+                android:text="列表循环" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_show_change_back"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_change_background"
+                android:text="换背景" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_show_sleep"
+                style="@style/SlidingMenu.TextView.ItemTitle"
+                android:layout_width="fill_parent"
+                android:drawableLeft="@drawable/icon_sleep_mode"
+                android:text="睡眠" />
+
+            <View style="@style/SlidingMenu.View.SplitLine" />
+
+            <TextView
+                android:id="@+id/txt_show_setting"
+                android:layout_width="fill_parent"
+                android:layout_height="50.0dip"
+                android:background="@drawable/list_selector"
+                android:drawableLeft="@drawable/icon_preferences_dark"
+                android:drawablePadding="15.0dip"
+                android:gravity="center_vertical"
+                android:paddingLeft="15.0dip"
+                android:text="设置"
+                android:textColor="@android:color/white"
+                android:textSize="18.0sp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btn_exit"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_above"
+        android:text="退出"
+        android:textColor="#ffffff"
+        android:textSize="20sp"></Button>
+
+</RelativeLayout>

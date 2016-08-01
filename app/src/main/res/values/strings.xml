@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Relax音乐</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_below_main">BelowMainActivity</string>
+    <string name="title_activity_local_music">LocalMusicActivity</string>
+    <string name="title_activity_flash">Relax音乐</string>
+    <string name="title_activity_guide">GuideActivity</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_fffffffff">FFFFFFFFF</string>
+    <string name="title_activity_again_search">AgainSearchActivity</string>
+</resources>

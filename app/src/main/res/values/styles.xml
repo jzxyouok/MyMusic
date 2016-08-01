@@ -1,0 +1,46 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="tab_menu_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@drawable/top_menu_bg</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:paddingTop">3dp</item>
+        <item name="android:textColor">@drawable/text_press_color</item>
+    </style>
+
+
+    <style name="SlidingMenu.TextView.ItemTitle" parent="@android:style/Widget.TextView">
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">center_vertical</item>
+        <item name="android:background">@drawable/list_selector</item>
+        <item name="android:paddingLeft">15.0dip</item>
+        <item name="android:layout_height">50.0dip</item>
+        <item name="android:drawablePadding">15.0dip</item>
+    </style>
+
+    <style name="lrc_dialog" parent="@android:style/Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="SlidingMenu.View.SplitLine" parent="@android:style/Widget">
+        <item name="android:background">@drawable/sliding_menu_line</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+</resources>

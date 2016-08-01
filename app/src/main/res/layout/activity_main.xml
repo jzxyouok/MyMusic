@@ -1,0 +1,74 @@
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:id="@+id/lineMain1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg">
+        <LinearLayout
+            android:background="@drawable/background_three"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="42dp">
+            <LinearLayout
+                android:layout_weight="0.7"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="42dp">
+
+            </LinearLayout>
+
+            <RadioGroup
+                android:id="@+id/rg_top_bar"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_weight="4"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rb_mine"
+                    style="@style/tab_menu_item"
+                    android:text="我的" />
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_music"-->
+                    <!--style="@style/tab_menu_item"-->
+                    <!--android:text="乐库" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_sing"-->
+                    <!--style="@style/tab_menu_item"-->
+                    <!--android:text="唱歌" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rb_vedio"-->
+                    <!--style="@style/tab_menu_item"-->
+                    <!--android:text="视频" />-->
+            </RadioGroup>
+
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:gravity="center"
+                android:layout_height="42dp">
+                <ImageButton
+                    android:id="@+id/id_iv_right"
+                    android:background="@drawable/caidan"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:onClick="showRightMenu"/>
+            </LinearLayout>
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/id_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></android.support.v4.view.ViewPager>
+    </LinearLayout>
+</LinearLayout>

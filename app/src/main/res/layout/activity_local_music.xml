@@ -1,0 +1,113 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:gravity="center_vertical"
+        android:background="@drawable/background_three"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <ImageButton
+            android:id="@+id/btn_img_back_local"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/back_main"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <TextView
+            android:text="本地歌曲"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <ImageButton
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/local_main_others"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <ImageButton
+            android:id="@+id/img_btn_search_sing"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="60dp"
+            android:background="@drawable/local_main_surch"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:background="@drawable/backgr"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+        <RadioGroup
+            android:id="@+id/rg_local_top_bar"
+            android:layout_width="0dp"
+            android:layout_height="42dp"
+            android:layout_weight="4"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_local_sing"
+                style="@style/tab_menu_item"
+                android:text="歌曲" />
+
+            <RadioButton
+                android:id="@+id/rb_local_singer"
+                style="@style/tab_menu_item"
+                android:text="歌手" />
+
+            <RadioButton
+                android:id="@+id/rb_local_special"
+                style="@style/tab_menu_item"
+                android:text="专辑" />
+
+            <RadioButton
+                android:id="@+id/rb_local_folder"
+                style="@style/tab_menu_item"
+                android:text="文件夹" />
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="2dp">
+        <ImageView
+            android:id="@+id/img_local_sing"
+            android:background="#f0bc0f"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_local_singer"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_local_special"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:id="@+id/img_local_folder"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:background="@drawable/back_local"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/localViewPager">
+    </android.support.v4.view.ViewPager>
+</LinearLayout>
